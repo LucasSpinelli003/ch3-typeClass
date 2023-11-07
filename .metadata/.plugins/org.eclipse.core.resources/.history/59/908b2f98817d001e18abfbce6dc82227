@@ -1,0 +1,75 @@
+package br.com.solutech.model;
+
+import java.time.LocalDateTime;
+
+public class Chamado {
+	
+	private int id;
+	private Segurado segurado;
+	private Veiculo veiculo;
+	private String endereco;
+	private String descricao;
+	private LocalDateTime dataCadastro;
+	
+	public Chamado() {}
+	
+	public Chamado(int id, Segurado segurado, Veiculo veiculo, String endereco, String descricao,
+			LocalDateTime dataCadastro) {
+		super();
+		this.id = id;
+		this.segurado = segurado;
+		this.veiculo = veiculo;
+		this.endereco = endereco;
+		this.descricao = descricao;
+		this.dataCadastro = dataCadastro;
+	}
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public Segurado getSegurado() {
+		return segurado;
+	}
+
+	public void setSegurado(Segurado segurado) {
+		this.segurado = segurado;
+	}
+
+	public Veiculo getVeiculo() {
+		return veiculo;
+	}
+
+	public void setVeiculo(Veiculo veiculo) {
+		this.veiculo = veiculo;
+	}
+
+	public String getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public LocalDateTime getDataCadastro() {
+		return dataCadastro;
+	}
+
+	public void setDataCadastro(LocalDateTime dataCadastro) {
+		this.dataCadastro = dataCadastro;
+	}
+
+}

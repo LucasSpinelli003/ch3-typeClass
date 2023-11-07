@@ -1,0 +1,6 @@
+package br.com.solutech.model;
+
+public class Segurado {
+	private int id;
+	private String endereco;
+}

@@ -1,0 +1,95 @@
+package br.com.solutech.model;
+
+import java.time.LocalDateTime;
+
+public class Chamado {
+	private int id;
+	private Segurado idSegurado;
+	private Segurado enderecoSegurado;
+	private Segurado contatoSegurado;
+	private Veiculo veiculo;
+	private String endereco;
+	private String descricao;
+	private LocalDateTime dataCadastro;
+	
+	private Chamado() {}
+
+	public Chamado(int id, Segurado idSegurado, Segurado enderecoSegurado, Segurado contatoSegurado, Veiculo veiculo,
+			String endereco, String descricao, LocalDateTime dataCadastro) {
+		super();
+		this.id = id;
+		this.idSegurado = idSegurado;
+		this.enderecoSegurado = enderecoSegurado;
+		this.contatoSegurado = contatoSegurado;
+		this.veiculo = veiculo;
+		this.endereco = endereco;
+		this.descricao = descricao;
+		this.dataCadastro = dataCadastro;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public Segurado getIdSegurado() {
+		return idSegurado;
+	}
+
+	public void setIdSegurado(Segurado idSegurado) {
+		this.idSegurado = idSegurado;
+	}
+
+	public Segurado getEnderecoSegurado() {
+		return enderecoSegurado;
+	}
+
+	public void setEnderecoSegurado(Segurado enderecoSegurado) {
+		this.enderecoSegurado = enderecoSegurado;
+	}
+
+	public Segurado getContatoSegurado() {
+		return contatoSegurado;
+	}
+
+	public void setContatoSegurado(Segurado contatoSegurado) {
+		this.contatoSegurado = contatoSegurado;
+	}
+
+	public Veiculo getVeiculo() {
+		return veiculo;
+	}
+
+	public void setVeiculo(Veiculo veiculo) {
+		this.veiculo = veiculo;
+	}
+
+	public String getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public LocalDateTime getDataCadastro() {
+		return dataCadastro;
+	}
+
+	public void setDataCadastro(LocalDateTime dataCadastro) {
+		this.dataCadastro = dataCadastro;
+	}
+	
+	
+}

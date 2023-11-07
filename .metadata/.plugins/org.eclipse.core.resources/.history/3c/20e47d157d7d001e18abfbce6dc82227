@@ -1,0 +1,14 @@
+package br.com.solutech.dao;
+
+import java.sql.Connection;
+
+public class ChamadoDao {
+
+	private Connection conn;
+	
+	public chamadoDao() {}
+	public chamadoDao(Connection conn) {
+		this.conn = conn;
+	}
+
+}

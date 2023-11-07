@@ -1,0 +1,116 @@
+package br.com.solutech.model;
+
+import java.time.LocalDate;
+
+public class Segurado {
+	private int id;
+	private String nome;
+	private LocalDate dataNascimento;
+	private String rg;
+	private String cpf;
+	private String endereco;
+	private String cep;
+	private String logradouro;
+	private String bairro;
+	private String complemento;
+	
+	private Segurado() {}
+
+	public Segurado(int id, String nome, LocalDate dataNascimento, String rg, String cpf, String endereco, String cep,
+			String logradouro, String bairro, String complemento) {
+		super();
+		this.id = id;
+		this.nome = nome;
+		this.dataNascimento = dataNascimento;
+		this.rg = rg;
+		this.cpf = cpf;
+		this.endereco = endereco;
+		this.cep = cep;
+		this.logradouro = logradouro;
+		this.bairro = bairro;
+		this.complemento = complemento;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public LocalDate getDataNascimento() {
+		return dataNascimento;
+	}
+
+	public void setDataNascimento(LocalDate dataNascimento) {
+		this.dataNascimento = dataNascimento;
+	}
+
+	public String getRg() {
+		return rg;
+	}
+
+	public void setRg(String rg) {
+		this.rg = rg;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public String getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
+
+	public String getCep() {
+		return cep;
+	}
+
+	public void setCep(String cep) {
+		this.cep = cep;
+	}
+
+	public String getLogradouro() {
+		return logradouro;
+	}
+
+	public void setLogradouro(String logradouro) {
+		this.logradouro = logradouro;
+	}
+
+	public String getBairro() {
+		return bairro;
+	}
+
+	public void setBairro(String bairro) {
+		this.bairro = bairro;
+	}
+
+	public String getComplemento() {
+		return complemento;
+	}
+
+	public void setComplemento(String complemento) {
+		this.complemento = complemento;
+	}
+
+	
+	
+}

@@ -1,0 +1,52 @@
+package br.com.solutech.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import br.com.solutech.model.Chamado;
+
+public class ChamadoDao {
+
+	private Connection conn;
+	
+	public ChamadoDao() {}
+	
+	public ChamadoDao(Connection conn) {
+		this.conn = conn;
+	}
+	
+	public List<Chamado> listar() throws ClassNotFoundException, SQLException {
+
+		PreparedStatement stm = conn.prepareStatement("select * from t_produto");
+
+		ResultSet result = stm.executeQuery();
+
+		List<Chamado> lista = new ArrayList<Chamado>();
+
+		while (result.next()) {
+			Chamado prod = parse(result);
+			lista.add(prod);
+		}
+		return lista;
+	}
+	
+	private Chamado parse(ResultSet result) throws SQLException {
+		// Obter os valores do produto
+		int codigo = result.getInt("cd_produto");
+		String nome = result.getString("nm_produto");
+		int estoque = result.getInt("nr_estoque");
+		double venda = result.getDouble("vl_venda");
+		double compra = result.getDouble("vl_compra");
+		
+		int codigoCategoria = result.getInt("cd_categoria");
+		
+		Chamado produto = new Chamado(codigo, nome, estoque, venda, compra);
+		
+		return produto;
+	}
+
+}

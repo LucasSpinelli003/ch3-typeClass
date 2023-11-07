@@ -1,0 +1,14 @@
+package br.com.solutech.model;
+
+import java.time.LocalDateTime;
+
+public class Chamado {
+	private int id;
+	private Segurado idSegurado;
+	private Segurado enderecoSegurado;
+	private Segurado contatoSegurado;
+	private Veiculo veiculo;
+	private String endereco;
+	private String descricao;
+	private LocalDateTime dataCadastro;
+}

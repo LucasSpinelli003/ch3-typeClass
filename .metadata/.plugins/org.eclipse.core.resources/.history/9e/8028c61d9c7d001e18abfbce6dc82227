@@ -1,0 +1,168 @@
+package br.com.solutech.model;
+
+import java.time.LocalDateTime;
+
+public class Chamado {
+	private int id;
+	private Segurado idSegurado;
+	private Segurado cepSegurado;
+	private Segurado logradouroSegurado;
+	private Segurado bairroSegurado;
+	private Segurado complementoSegurado;
+	private Segurado contatoSegurado;
+	private Veiculo veiculo;
+	private String logradouro;
+	private int numero;
+	private String pontoReferencia;
+	private String descricao;
+	private LocalDateTime dataCadastro;
+	
+	private Chamado() {}
+
+	
+
+	public Chamado(int id, Segurado idSegurado, Segurado cepSegurado, Segurado logradouroSegurado,
+			Segurado bairroSegurado, Segurado complementoSegurado, Segurado contatoSegurado, Veiculo veiculo,
+			String logradouro, int numero, String pontoReferencia, String descricao, LocalDateTime dataCadastro) {
+		super();
+		this.id = id;
+		this.idSegurado = idSegurado;
+		this.cepSegurado = cepSegurado;
+		this.logradouroSegurado = logradouroSegurado;
+		this.bairroSegurado = bairroSegurado;
+		this.complementoSegurado = complementoSegurado;
+		this.contatoSegurado = contatoSegurado;
+		this.veiculo = veiculo;
+		this.logradouro = logradouro;
+		this.numero = numero;
+		this.pontoReferencia = pontoReferencia;
+		this.descricao = descricao;
+		this.dataCadastro = dataCadastro;
+	}
+
+
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public Segurado getIdSegurado() {
+		return idSegurado;
+	}
+
+	public void setIdSegurado(Segurado idSegurado) {
+		this.idSegurado = idSegurado;
+	}
+
+	public Segurado getContatoSegurado() {
+		return contatoSegurado;
+	}
+
+	public void setContatoSegurado(Segurado contatoSegurado) {
+		this.contatoSegurado = contatoSegurado;
+	}
+
+	public Veiculo getVeiculo() {
+		return veiculo;
+	}
+
+	public void setVeiculo(Veiculo veiculo) {
+		this.veiculo = veiculo;
+	}
+
+	public String getLogradouro() {
+		return logradouro;
+	}
+
+	public void setLogradouro(String logradouro) {
+		this.logradouro = logradouro;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public String getPontoReferencia() {
+		return pontoReferencia;
+	}
+
+	public void setPontoReferencia(String pontoReferencia) {
+		this.pontoReferencia = pontoReferencia;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public LocalDateTime getDataCadastro() {
+		return dataCadastro;
+	}
+
+	public void setDataCadastro(LocalDateTime dataCadastro) {
+		this.dataCadastro = dataCadastro;
+	}
+
+
+
+	public Segurado getCepSegurado() {
+		return cepSegurado;
+	}
+
+
+
+	public void setCepSegurado(Segurado cepSegurado) {
+		this.cepSegurado = cepSegurado;
+	}
+
+
+
+	public Segurado getLogradouroSegurado() {
+		return logradouroSegurado;
+	}
+
+
+
+	public void setLogradouroSegurado(Segurado logradouroSegurado) {
+		this.logradouroSegurado = logradouroSegurado;
+	}
+
+
+
+	public Segurado getBairroSegurado() {
+		return bairroSegurado;
+	}
+
+
+
+	public void setBairroSegurado(Segurado bairroSegurado) {
+		this.bairroSegurado = bairroSegurado;
+	}
+
+
+
+	public Segurado getComplementoSegurado() {
+		return complementoSegurado;
+	}
+
+
+
+	public void setComplementoSegurado(Segurado complementoSegurado) {
+		this.complementoSegurado = complementoSegurado;
+	}
+
+
+	
+	
+}

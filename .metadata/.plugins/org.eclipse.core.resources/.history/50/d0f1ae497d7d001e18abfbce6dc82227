@@ -1,0 +1,8 @@
+package br.com.solutech.model;
+
+public class Chamado {
+	
+	private int id;
+	private Segurado segurado;
+
+}
